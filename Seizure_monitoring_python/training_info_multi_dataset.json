@@ -1,0 +1,49 @@
+{
+  "datasets": [
+    "bonn",
+    "tusz",
+    "barcelona",
+    "freiburg"
+  ],
+  "original_data_shape": [
+    [
+      63800,
+      127
+    ],
+    [
+      63800
+    ]
+  ],
+  "resampled_data_shape": [
+    [
+      125200,
+      127
+    ],
+    [
+      125200
+    ]
+  ],
+  "test_size": 0.2,
+  "model_params": {
+    "objective": "binary",
+    "metric": "binary_logloss",
+    "boosting_type": "gbdt",
+    "learning_rate": 0.05,
+    "max_depth": 8,
+    "num_leaves": 63,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "verbose": 0,
+    "random_state": 42,
+    "is_unbalance": false,
+    "scale_pos_weight": 1.0
+  },
+  "best_iteration": 606,
+  "metrics": {
+    "accuracy": 0.997723642172524,
+    "f1_score": 0.9977037424968779,
+    "precision": 0.9954180064308682,
+    "recall": 1.0
+  }
+}
